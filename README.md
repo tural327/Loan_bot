@@ -26,3 +26,10 @@ s
 In this notebook, we will explore the practical applications of both WoE and IV by utilizing the Loan-Approval-Prediction-Dataset. Our aim is to demonstrate how these techniques can be used to enhance the predictive accuracy in many binary classification tasks, such as loan approval prediction.
 
  # Visualization
+ Before training I made quich explore and made simple visualization
+
+ ![](https://github.com/tural327/Loan_bot/blob/main/1.png)
+  ![](https://github.com/tural327/Loan_bot/blob/main/2.png)
+   ![](https://github.com/tural327/Loan_bot/blob/main/3.png)
+    ![](https://github.com/tural327/Loan_bot/blob/main/4.png)
+ # Training
