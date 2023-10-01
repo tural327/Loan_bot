@@ -76,7 +76,7 @@ def my_prediction(no_of_dependents,loan_term,cibil_score,residential_assets_valu
 
 
 async def start(update:Update,context:ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Salam ! baslamaq ucun sadece 'start' yaz")
+    await update.message.reply_text("Hello for for starting please write 'start")
 
 async def make_all_zero(update:Update,context:ContextTypes.DEFAULT_TYPE):
     no_of_dependents = [0]
@@ -90,7 +90,7 @@ async def make_all_zero(update:Update,context:ContextTypes.DEFAULT_TYPE):
     loan_amount_log = [0]
     education_0_1 = [0]   #0 Graduate 1 not Graduate
     self_employed_0_1 = [0] # 0 yes 1 no
-    await update.message.reply_text("her sey sifirlandi yeniden baslaya bilersen")
+    await update.message.reply_text("Now we can start from zero!")
 
 async def handle(update:Update,context:ContextTypes.DEFAULT_TYPE):
 
@@ -99,10 +99,10 @@ async def handle(update:Update,context:ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("please provide to us your the number of dependents of the applicant")
     elif text.isdigit() and no_of_dependents[0]==0:
         no_of_dependents[0] = int(text)
-        await update.message.reply_text(f"Great!  The number of dependents of the applicant {text} acceppted! now please provide  the number of dependents of the applicant")
+        await update.message.reply_text(f"Great!  The number of dependents of the applicant {text} acceppted! now please provide  loan term")
     elif text.isdigit() and loan_term[0]==0:
         loan_term[0] = int(text)
-        await update.message.reply_text(f"Cool!  the number of dependents of the applicant {text} acceppted! now please provide credit score of the applicant")
+        await update.message.reply_text(f"Cool!  loan term is {text} acceppted! now please provide credit score of the applicant")
     elif text.isdigit() and cibil_score[0]==0:
         cibil_score[0] = int(text)
         await update.message.reply_text(f"Good job  Credit score of the applicant {text} acceppted! now please provide the total value of the applicant's residential assets")
@@ -129,7 +129,7 @@ async def handle(update:Update,context:ContextTypes.DEFAULT_TYPE):
             education_0_1[0] = str(text)
             await update.message.reply_text(f"The last one either if the applicant is self employed or not (Yes/No)")
         else:
-            await update.message.reply_text("Zehmet olmasa telebe uygun davranin")
+            await update.message.reply_text("Please add requaried digit!")
     if self_employed_0_1[0]==0:
         if text=="Yes" or text == "No":
             self_employed_0_1[0] = str(text)
