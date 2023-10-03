@@ -55,3 +55,8 @@ model	best_score	best_params
 2	logistic_regression	0.929783	{'C': 10}
  ```
 Random forest model was much more better so i will use this model
+
+# Testing
+## For testing I used trained model in telegram bot and bot was asking simple questions to get input values for makeing prediction
+
+![](https://github.com/tural327/Loan_bot/blob/main/ezgif-5-403ad8c5ff.gif)
